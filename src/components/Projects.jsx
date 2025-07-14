@@ -204,7 +204,7 @@ const Projects = () => {
       description:
         "Helps classify schools as furnished or odd, track improvements, and generate reports. Integrates maps and improvement tracking.",
       link: "#",
-      github: "https://github.com/abhishekv18/Edu_Struct",
+      github: "https://github.com/abhishekv18/EduStruct",
       category: "Full Stack",
       tags: ["React", "Node.js", "MongoDB", "Google Maps"],
       icon: <School size={24} />
