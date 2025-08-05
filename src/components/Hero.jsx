@@ -178,7 +178,7 @@ const Hero = () => {
           </div>
           
           {/* Right content - Floating 3D object or illustration */}
-          <div className={`w-full lg:w-2/5 relative transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+          <div className={`w-full lg:w-2/5 relative transition-all duration-1000 mb-1 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="relative aspect-square max-w-md mx-auto">
               {/* Code sphere visualization - this is a stylized representation */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -194,7 +194,7 @@ const Hero = () => {
                   
                   {/* Central element */}
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl rotate-45 shadow-xl shadow-indigo-500/20 flex items-center justify-center">
+                    <div className="w-20 h-20 md:h-24 md:w-24 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl rotate-45 shadow-xl shadow-indigo-500/20 flex items-center justify-center">
                       <Code size={40} className="text-white -rotate-45" />
                     </div>
                   </div>
