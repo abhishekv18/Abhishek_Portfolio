@@ -18,7 +18,8 @@ import {
   LayoutGrid,
   Code,
   MessageCircle,
-  BlocksIcon
+  BlocksIcon,
+  Image
 } from 'lucide-react';
 
 const Skills = () => {
@@ -47,7 +48,8 @@ const Skills = () => {
       skills: [
         { name: "Node.js", icon: <Terminal size={32} />, proficiency: 85 },
         { name: "Express", icon: <Bot size={32} />, proficiency: 82 },
-        { name: "MongoDB", icon: <Database size={32} />, proficiency: 80 }
+        { name: "MongoDB", icon: <Database size={32} />, proficiency: 80 },
+          { name: "Cloudinary", icon: <Image size={32} />, proficiency: 90 }
       ]
     },
     {

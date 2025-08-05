@@ -132,6 +132,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FaEnvelope, FaUser, FaPaperPlane, FaMapMarkerAlt, FaPhone, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -202,40 +203,86 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
     
-    if (validateForm()) {
-      setIsSubmitting(true);
-      setSubmitStatus({ success: false, message: '' });
+  //   if (validateForm()) {
+  //     setIsSubmitting(true);
+  //     setSubmitStatus({ success: false, message: '' });
       
-      emailjs
-        .send(
-          "service_71n7p1f",
-          "template_fexaucs",
-          formData,
-          "46QbDP4d8fZhoY_Tq"
-        )
-        .then(
-          (result) => {
-            setIsSubmitting(false);
-            setSubmitStatus({ 
-              success: true, 
-              message: 'Message sent successfully! I\'ll get back to you soon.' 
-            });
-            setFormData({ name: '', email: '', subject: '', message: '' });
-          },
-          (error) => {
-            setIsSubmitting(false);
-            setSubmitStatus({ 
-              success: false, 
-              message: 'Failed to send message. Please try again or contact me directly via email.' 
-            });
-            console.log(error.text);
-          }
-        );
-    }
-  };
+  //     emailjs
+  //       .send(
+  //         "service_71n7p1f",
+  //         "template_fexaucs",
+  //         formData,
+  //         "46QbDP4d8fZhoY_Tq"
+  //       )
+  //       .then(
+  //         (result) => {
+  //           setIsSubmitting(false);
+  //           setSubmitStatus({ 
+  //             success: true, 
+  //             message: 'Message sent successfully! I\'ll get back to you soon.' 
+  //           });
+  //           setFormData({ name: '', email: '', subject: '', message: '' });
+            
+  //         },
+  //         (error) => {
+  //           setIsSubmitting(false);
+  //           setSubmitStatus({ 
+  //             success: false, 
+  //             message: 'Failed to send message. Please try again or contact me directly via email.' 
+  //           });
+  //           console.log(error.text);
+  //         }
+  //       );
+  //   }
+  // };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (validateForm()) {
+    setIsSubmitting(true);
+    setSubmitStatus({ success: false, message: '' });
+
+    emailjs
+      .send(
+        "service_71n7p1f",
+        "template_fexaucs",
+        formData,
+        "46QbDP4d8fZhoY_Tq"
+      )
+      .then(
+        (result) => {
+          setIsSubmitting(false);
+          setSubmitStatus({
+            success: true,
+            message: "Message sent successfully! I'll get back to you soon.",
+          });
+          setFormData({ name: '', email: '', subject: '', message: '' });
+
+          // Clear the status after 4 seconds
+          setTimeout(() => {
+            setSubmitStatus({ success: false, message: '' });
+          }, 3000);
+        },
+        (error) => {
+          setIsSubmitting(false);
+          setSubmitStatus({
+            success: false,
+            message:
+              "Failed to send message. Please try again or contact me directly via email.",
+          });
+          console.log(error.text);
+
+          // Clear the status after 4 seconds
+          setTimeout(() => {
+            setSubmitStatus({ success: false, message: '' });
+          }, 3000);
+        }
+      );
+  }
+};
 
   return (
     <section id="contact" className="py-20 px-6 bg-gradient-to-b from-gray-900 to-indigo-950 text-gray-200">
@@ -257,15 +304,23 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
-                    <FaMapMarkerAlt className="text-indigo-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Location</h4>
-                    <p className="text-gray-400 mt-1">Ghaziabad, Uttar Pradesh</p>
-                  </div>
-                </div>
+               <div className="flex items-start">
+  <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
+    <FaMapMarkerAlt className="text-indigo-400" />
+  </div>
+  <div>
+    <h4 className="font-semibold text-white">Location</h4>
+    <a
+      href="https://www.google.com/maps/place/Muradnagar,+Ghaziabad,+Uttar+Pradesh"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 mt-1 inline-block hover:text-indigo-400 transition-colors"
+    >
+      Muradnagar, Ghaziabad, Uttar Pradesh, India
+    </a>
+  </div>
+</div>
+
                 
                 <div className="flex items-start">
                   <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
@@ -273,21 +328,24 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white">Email</h4>
-                    <a href="mailto:your.email@example.com" className="text-gray-400 mt-1 hover:text-indigo-400 transition-colors">
-                      abhishekagrawal1604@gmail.com
+                    <a href="mailto:abhishekpersonalv18@gmail.com" className="text-gray-400 mt-1 hover:text-indigo-400 transition-colors">
+                     abhishekpersonalv18@gmail.com
                     </a>
                   </div>
                 </div>
                 
-                <div className="flex items-start">
-                  <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
-                    <FaPhone className="text-indigo-400" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Phone</h4>
-                    <p className="text-gray-400 mt-1">+91 8604050163</p>
-                  </div>
-                </div>
+              <div className="flex items-start">
+  <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
+    <Phone className="text-indigo-400 w-4 h-4" />
+  </div>
+  <div>
+    <h4 className="font-semibold text-white">Phone</h4>
+    <a href="tel:+918604050163" className="text-gray-400 mt-1 inline-block  hover:text-indigo-400 transition-colors">
+      +91 8604050163
+    </a>
+  </div>
+</div>
+
               </div>
               
               <div className="mt-12">
@@ -349,7 +407,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="John Doe"
+                        placeholder="abc"
                         className={`w-full p-3 pl-10 rounded-md bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all border ${
                           formError.name ? 'border-red-500' : 'border-gray-700'
                         }`}
@@ -370,7 +428,7 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="johndoe@example.com"
+                        placeholder="abc@gmail.com"
                         className={`w-full p-3 pl-10 rounded-md bg-gray-900 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all border ${
                           formError.email ? 'border-red-500' : 'border-gray-700'
                         }`}

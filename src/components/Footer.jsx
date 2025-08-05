@@ -98,7 +98,7 @@ const Footer = () => {
                 <FaLinkedin className="text-xl" />
               </a>
               <a
-                href="mailto:abhishekagrawal1604@gmail.com"
+                href="mailto:abhishekpersonalv18@gmail.com"
                 className="p-2 bg-gray-800 hover:bg-indigo-600 rounded-md transition-colors duration-300"
                 aria-label="Email"
               >
@@ -151,10 +151,10 @@ const Footer = () => {
               <li className="flex items-start">
                 <FaEnvelope className="mt-1 mr-3 text-indigo-400" />
                 <a 
-                  href="mailto:agrawalabhishek723@gmail.com" 
+                  href="mailto:abhishekpersonalv18@gmail.com" 
                   className="text-gray-400 hover:text-indigo-400 transition-colors duration-300"
                 >
-                  abhishekagrawal1604@gmail.com
+                 abhishekpersonalv18@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -168,8 +168,8 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="pt-8 text-center">
           <p className="flex items-center justify-center text-sm">
-            &copy; {new Date().getFullYear()} Abhishek Agrawal. All Rights Reserved. Made with 
-            <FaHeart className="text-red-500 mx-1 animate-pulse" /> in India
+            &copy; {new Date().getFullYear()} All Rights Reserved. Made with 
+            <FaHeart className="text-red-500 mx-1 animate-pulse" /> by Abhishek.
           </p>
         </div>
       </div>
