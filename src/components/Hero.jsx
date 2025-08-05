@@ -130,30 +130,36 @@ const Hero = () => {
           </div>
           
           {/* Right content - Floating 3D object or illustration */}
-          <div className={`w-full lg:w-2/5 relative transition-all duration-1000 mb-1 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <div className="relative aspect-square max-w-md mx-auto">
-              {/* Code sphere visualization - this is a stylized representation */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative w-full h-full">
-                  {/* Outer ring */}
-                  <div className="absolute inset-0 border-4 border-indigo-500/30 rounded-full animate-spin-slow"></div>
-                  
-                  {/* Middle ring */}
-                  <div className="absolute inset-8 border-4 border-purple-500/30 rounded-full animate-spin-slow-reverse"></div>
-                  
-                  {/* Inner ring */}
-                  <div className="absolute inset-16 border-4 border-pink-500/30 rounded-full animate-spin-slow"></div>
-                  
-                  {/* Central element */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 md:h-24 md:w-24 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl rotate-45 shadow-xl shadow-indigo-500/20 flex items-center justify-center">
-                      <Code size={40} className="text-white -rotate-45" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+ <div
+  className={`w-full lg:w-2/5 relative transition-all duration-1000 mb-1 ${
+    isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+  }`}
+>
+  <div className="relative aspect-square max-w-[260px] md:max-w-md mx-auto">
+    {/* Code sphere visualization */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="relative w-full h-full">
+        {/* Outer ring */}
+        <div className="absolute inset-0 border-4 border-indigo-500/30 rounded-full animate-spin-slow"></div>
+
+        {/* Middle ring - larger on small screens */}
+        <div className="absolute inset-4 md:inset-8 border-4 border-purple-500/30 rounded-full animate-spin-slow-reverse"></div>
+
+        {/* Inner ring - larger on small screens */}
+        <div className="absolute inset-8 md:inset-16 border-4 border-pink-500/30 rounded-full animate-spin-slow"></div>
+
+        {/* Central icon */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-20 h-20 md:h-24 md:w-24 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl rotate-45 shadow-xl shadow-indigo-500/20 flex items-center justify-center">
+            <Code size={40} className="text-white -rotate-45" />
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </div>
       </div>
       
