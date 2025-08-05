@@ -77,7 +77,7 @@ const Skills = () => {
           <h2 className="text-5xl font-bold text-white mb-4">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-indigo-500 mx-auto mb-8"></div>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            A showcase of my technical abilities and proficiency in various technologies
+            A showcase of my technical abilities and proficiency in various technologies.
           </p>
         </div>
         
