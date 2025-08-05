@@ -135,7 +135,8 @@ const Hero = () => {
               
               <a
                 href="/resume.pdf"
-                download
+              
+                 download="Abhishek_Agrawal_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all"
