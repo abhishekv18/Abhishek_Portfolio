@@ -83,7 +83,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMSI+PHBhdGggZD0iTTM2IDM0djZoNnYtNmgtNnptNiA2djZoNnYtNmgtNnptLTYgNnY2aDZ2LTZoLTZ6bTYgMHY2aDZ2LTZoLTZ6TTI0IDM0djZoNnYtNmgtNnptNiA2djZoNnYtNmgtNnptLTYgNnY2aDZ2LTZoLTZ6bTYgMHY2aDZ2LTZoLTZ6TTEyIDM0djZoNnYtNmgtNnptNiA2djZoNnYtNmgtNnptLTYgNnY2aDZ2LTZoLTZ6bTYgMHY2aDZ2LTZoLTZ6TTAgMzR2NmgxMnYtNkgwem0wIDZ2NmgxMnYtNkgwem0wIDZ2NmgxMnYtNkgwem0xMiAwdjZoMTJ2LTZIMTJtMTIgMHY2aDEydi02SDI0bTEyIDB2NmgxMnYtNkgzNm0xMiAwdjZoMTJ2LTZINDgiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-40"></div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 z-10">
+      <div className="container mx-auto px-6 lg:px-8 z-10 mt-0.5">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Left content - Text */}
           <div className={`w-full lg:w-3/5 text-white space-y-8 transition-all duration-1000 mt-24 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
@@ -146,7 +146,7 @@ const Hero = () => {
               </a>
             </div>
             
-            <div className="flex items-center gap-4 pt-4">
+            <div className="flex items-center gap-4 pt-4 mb-2">
               <a
                   href="https://github.com/abhishekv18"
                 target="_blank"
