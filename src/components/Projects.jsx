@@ -487,7 +487,7 @@ const Projects = () => {
       title: "Cathect Solutions",
       image: ashwamedh,
       description:
-        "NGO website focused on helping underprivileged children in Mumbai. Features donation system, event management, and volunteer registration.",
+        "NGO website focused on helping underprivileged children in Mumbai. Features donation system, CMS Admin Panel, and volunteer registration.",
       link: "http://ashwamedh-ngo.vercel.app",
       github: "#",
       category: "Internship",
@@ -499,7 +499,7 @@ const Projects = () => {
       title: "Adiyogi Foundation",
       image: adiyogi,
       description:
-        "Official website for temple reconstruction NGO. Includes donation tracking, project updates, and spiritual resources.",
+        "Official website for temple reconstruction NGO. Includes Blogs Functionalities, project updates, and spiritual resources.",
       link: "https://www.adiyogifoundation.org.in",
       github: "#",
       category: "Internship",
@@ -511,7 +511,7 @@ const Projects = () => {
       title: "Pindi Chap Junction",
       image: foodiex,
       description:
-        "Food delivery platform specializing in authentic chappati dishes. Includes menu, online ordering, and delivery tracking.",
+        "Food delivery platform specializing in authentic chappati dishes. Includes menu, online ordering, and Book a table.",
       link: "https://foodiex-final.vercel.app/",
       github: "#",
       category: "Freelance",
