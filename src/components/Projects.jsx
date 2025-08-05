@@ -484,7 +484,7 @@ const Projects = () => {
   const projectList = [
     // Full Stack Projects
      {
-      title: "Ashwamedh Foundation",
+      title: "Cathect Solutions",
       image: ashwamedh,
       description:
         "NGO website focused on helping underprivileged children in Mumbai. Features donation system, event management, and volunteer registration.",
