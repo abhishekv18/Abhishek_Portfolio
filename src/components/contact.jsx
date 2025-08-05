@@ -322,7 +322,7 @@ const handleSubmit = (e) => {
 </div>
 
                 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
                     <FaEnvelope className="text-indigo-400" />
                   </div>
@@ -332,8 +332,22 @@ const handleSubmit = (e) => {
                      abhishekpersonalv18@gmail.com
                     </a>
                   </div>
-                </div>
-                
+                </div> */}
+                <div className="flex flex-wrap items-start max-w-full">
+  <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
+    <FaEnvelope className="text-indigo-400" />
+  </div>
+  <div className="min-w-0">
+    <h4 className="font-semibold text-white">Email</h4>
+    <a
+      href="mailto:abhishekpersonalv18@gmail.com"
+      className="text-gray-400 mt-1 hover:text-indigo-400 transition-colors break-all block"
+    >
+      abhishekpersonalv18@gmail.com
+    </a>
+  </div>
+</div>
+
               <div className="flex items-start">
   <div className="p-3 bg-gray-900 rounded-lg mr-4 border border-indigo-500">
     <Phone className="text-indigo-400 w-4 h-4" />
