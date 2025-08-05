@@ -166,12 +166,20 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="pt-8 text-center">
+        {/* <div className="pt-8 text-center">
           <p className="flex items-center justify-center text-sm">
             &copy; {new Date().getFullYear()} All Rights Reserved. Made with 
             <FaHeart className="text-red-500 mx-1 animate-pulse" /> by Abhishek.
           </p>
-        </div>
+        </div> */}
+        <div className="pt-8 text-center px-4">
+  <p className="flex flex-wrap items-center justify-center text-sm text-gray-400">
+    &copy; {new Date().getFullYear()} All Rights Reserved.&nbsp;Made with 
+    <FaHeart className="text-red-500 mx-1 animate-pulse" /> 
+    by <span className="ml-1 font-medium text-white">Abhishek</span>.
+  </p>
+</div>
+
       </div>
     </footer>
   );
