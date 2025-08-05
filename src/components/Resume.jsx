@@ -193,7 +193,7 @@ const Resume = () => {
                     <h4 className="font-bold text-lg text-white">Tools & Other</h4>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-2">
-                    {['Git', 'GitHub', 'Socket.io', 'Stripe', 'PayPal', 'Cloudinary', 'Postman'].map((skill) => (
+                    {['Git', 'GitHub', 'Socket.io', 'Stripe', 'PayPal', 'Cloudinary', 'Postman','Razorpay'].map((skill) => (
                       <span key={skill} className="px-3 py-1 bg-gray-900 border border-gray-700 rounded-md text-sm text-gray-300 hover:bg-indigo-900/30 hover:border-indigo-500 transition-colors">
                         {skill}
                       </span>
