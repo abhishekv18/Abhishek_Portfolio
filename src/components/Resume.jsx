@@ -259,7 +259,7 @@ const Resume = () => {
         {/* Download Resume Button */}
         <div className="mt-16 text-center">
           <a
-            href="./src/assets/resume.pdf"
+            href="/resume.pdf"
             download
             className="group inline-flex items-center px-8 py-3 bg-gray-900 text-white font-medium rounded-md border border-indigo-500 hover:bg-indigo-900 transition-colors duration-300 hover:shadow-lg hover:shadow-indigo-500/20"
           >

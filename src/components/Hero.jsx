@@ -134,7 +134,7 @@ const Hero = () => {
               </Link>
               
               <a
-                href="./src/assets/resume.pdf"
+                href="/resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
