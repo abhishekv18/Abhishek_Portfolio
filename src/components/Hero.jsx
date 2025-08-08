@@ -56,9 +56,10 @@ const Hero = () => {
             </h2>
             
             <p className="text-base md:text-lg text-gray-400 max-w-2xl">
-              I specialize in creating modern, responsive web solutions with a focus on performance and accessibility. 
+              {/* I specialize in creating modern, responsive web solutions with a focus on performance and accessibility. 
               With expertise in React, Node.js, and cloud technologies, I help businesses achieve their digital goals through 
-              clean code and intuitive interfaces.
+              clean code and intuitive interfaces. */}
+             I’m a MERN Stack Developer with proven experience delivering full-stack web solutions through 2 freelance projects and 2 internships. I turn ideas into high-performance, accessible, and user-friendly applications using MongoDB, Express, React, and Node.js.
             </p>
             
             <div className="flex flex-wrap gap-3 md:gap-4">
@@ -68,7 +69,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2 px-3 py-1.5 bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300">
                 <Monitor size={16} />
-                <span>Tailwind CSS</span>
+                <span>Express.js</span>
               </div>
               <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full text-blue-300">
                 <Database size={16} />

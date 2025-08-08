@@ -176,27 +176,7 @@ const About = () => {
               complex problems into simple, beautiful solutions.
             </p>
             
-            {/* Skills */}
-            {/* <div className="pt-4">
-              <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-                Core Expertise
-              </h4>
-              <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <div 
-                    key={index} 
-                    className="flex items-center gap-3 p-3 rounded-lg bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700"
-                  >
-                    <div className="p-2 rounded-md bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400">
-                      {skill.icon}
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-300">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div> */}
+           
         <div className="pt-4">
   <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
     Core Expertise
