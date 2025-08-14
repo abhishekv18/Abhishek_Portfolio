@@ -87,7 +87,7 @@ const Hero = () => {
               </Link>
               
               <a
-                href="/resume.pdf"
+                href="/Abhishek_resume.pdf"
               
                  download="Abhishek_Agrawal_Resume.pdf"
                 target="_blank"
